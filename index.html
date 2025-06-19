@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Soal Ujian</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analisis Soal Ujian</h1>
+
+        <div class="input-setup">
+            <label for="numQuestions">Jumlah Soal:</label>
+            <input type="number" id="numQuestions" min="1">
+            <label for="numStudents">Jumlah Anak:</label>
+            <input type="number" id="numStudents" min="1">
+            <button id="generateInputs">Buat Kolom Jawaban</button>
+        </div>
+
+        <div id="answerInputSection" style="display: none;">
+            <h2>Input Kunci Jawaban dan Jawaban Siswa</h2>
+            <div id="keyAnswerInput">
+                <h3>Kunci Jawaban:</h3>
+                <div id="keyAnswerContainer" class="answer-row"></div>
+            </div>
+            <div id="studentAnswersInput">
+                <h3>Jawaban Siswa:</h3>
+                <div id="studentAnswersContainer"></div>
+            </div>
+            <button id="analyzeAnswers">Analisis Jawaban</button>
+        </div>
+
+        <div id="analysisResults" style="display: none;">
+            <h2>Hasil Analisis</h2>
+            <div id="scoreSummary"></div>
+            <div id="questionCorrectSummary"></div>
+            <div id="studentRanking"></div>
+            <div id="groupAnalysis"></div>
+            <div id="difficultyIndex"></div>
+            <div id="discriminatingPower"></div>
+            <div id="validityTest"></div>
+            <div id="reliabilityTest"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
